@@ -1,0 +1,163 @@
+//Variables 
+
+//Tipos de colores
+
+$colorgrad: #E27979;
+$gradiente1: #E27979;
+$gradiente2: #2CDC3D;
+
+$color1: #000000;
+$color2: #000000;
+$colorpie: silver;
+
+//Posiciones de cajas
+
+.boxes {
+      background-color: #979797;
+
+ &__box1 {
+     margin: 60px 0px 0px 175px;
+}
+ 
+ &__box2 {
+     margin: 15px 0px 0px 175px;    
+}
+ 
+ &__box3 {
+    margin: -55px 500px 0px 450px;
+	text-align:center;
+}
+
+&__box4 {
+    margin: -115px 0px 0px 820px;
+}
+}
+
+//Posiciones y box model para imagenes
+
+.imgPos { 
+
+&__imgPos1 {
+	border: solid 2px black;
+	padding: 5px;
+	display: inline-block;
+	width: 500px;
+	height: 300px;
+	margin:30px 5px 30px 75px;
+	transition:1s;
+}
+
+&__imgPos1:hover {
+	transform:scale(1.07);
+}
+
+&__imgPos2 {
+	border: solid 2px black;
+	padding: 5px;
+	display: inline-block;
+	width: 550px;
+	height: 300px;
+	margin: 0px 0px 30px 50px;
+	transition:1s;
+}
+
+&__imgPos2:hover {
+	transform:scale(1.07);
+}
+
+&__imgPos3 {
+	border:solid 2px black;
+	padding:5px;
+	margin:0px 10px 0px 10px;
+	display:inline-block;
+	width: 50px;
+	height: 50px;	
+	transition:0.5s;
+	justify-content:center;
+}
+
+&__imgPos3:hover {
+	transform:scale(1.5);
+}
+}
+
+//Cuerpo principal
+
+.cuerpo {
+
+&__fuente {
+	font-family: 'Josefin Sans', sans-serif;;
+}
+
+&__fondoCompleto {
+	background-color:#DCDFE3;	
+}
+}
+
+//Centrados y espaciados
+
+.CentEsp {
+
+&__p {
+	margin-top:10px;	
+}
+
+&__textoCentro {
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+&__imgCentro {
+	display:block;
+	margin:auto;
+}
+
+&__espaciado {
+	letter-spacing: 1.5px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+&__espaciadoPared {
+	margin-left:20px;
+	margin-right:20px;
+}
+}
+
+//Condicional de carrusel para imagenes
+
+.carousel-control-prev {
+	left:0;
+	@if else $gradiente1 == $gradiente2 {
+	background-image: linear-gradient(90deg, rgba($colorgrad, .25), rgba($colorgrad, .001));
+	}
+}
+
+.carousel-control-next {
+	right: 0;
+	@if else $gradiente1 == $gradiente2 {
+	background-image: linear-gradient(270deg, rgba($colorgrad, .25), rgba($colorgrad, .001));
+	}
+}
+
+//Cambio de click para pie de pagina
+
+.footer:hover {
+	@if $color1 = $color2 {
+	background-color: $colorpie;
+	}
+}
+
+//Mixin para click de imagenes
+
+@mixin imgPos {
+	transform:scale(1.07);
+} 
+
+.imgPos1:hover {
+	@include imgPos
+}
+
+.imgPos2:hover {
+	@include imgPos
+}

@@ -1,0 +1,234 @@
+/*-- RESET --*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*-- MENU NAV --*/
+
+.menu{
+	list-style: none;
+	padding: 0px;
+	background: black;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;   
+}
+
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 20px ;
+	display: block;
+	list-style: none;
+}
+
+.menu li{
+	display: inline-block;
+	text-align: center;
+	list-style: none;
+}
+
+.menu li a:hover{
+	background: #B6CEF4;
+}
+
+/*-- TABLA --*/
+
+table table-hover table-bordered table-dark { 
+	table-layout: fixed;
+    width: 150px;
+}
+
+/*-- COLORES & FONDOS --*/
+
+.colorNegro {
+	color:black;
+}
+
+.fuente {
+	font-family: 'Josefin Sans', sans-serif;;
+}
+
+.fondoCompleto {
+	background-color:#DCDFE3;	
+}
+
+
+/*-- CENTRADO & ESPACIADO --*/
+
+p {
+	margin-top:10px;	
+}
+
+.textoCentro {
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.imgCentro {
+	display:block;
+	margin:auto;
+}
+
+.espaciado {
+	letter-spacing: 1.5px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.espaciadoPared {
+	margin-left:20px;
+	margin-right:20px;
+}
+
+/*-- TITULOS --*/
+
+.titulos {
+	color:black;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 60px;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 2.0;
+	border:solid 1px black;
+}
+
+/*-- BOX MODEL --*/
+
+.disp {
+	display:inline-block;
+} 
+
+.imgPos1 {
+	border: solid 2px black;
+	padding: 5px;
+	display: inline-block;
+	width: 500px;
+	height: 300px;
+	margin:30px 5px 30px 75px;
+	transition:1s;
+}
+
+.imgPos1:hover {
+	transform:scale(1.07);
+}
+
+.imgPos2 {
+	border: solid 2px black;
+	padding: 5px;
+	display: inline-block;
+	width: 550px;
+	height: 300px;
+	margin: 0px 0px 30px 50px;
+	transition:1s;
+}
+
+.imgPos2:hover{
+	transform:scale(1.07);
+}
+
+.imgPos3 {
+	border:solid 2px black;
+	padding:5px;
+	margin:0px 10px 0px 10px;
+	display:inline-block;
+	width: 50px;
+	height: 50px;	
+	transition:0.5s;
+	justify-content:center;
+}
+
+.imgPos3:hover {
+	transform:scale(1.5);
+}
+
+.box1 {
+	margin: 60px 0px 0px 175px;
+}
+
+.box2 {
+	margin: 15px 0px 0px 175px;
+}
+
+.box3 {
+	margin: -55px 500px 0px 450px;
+	text-align:center;
+}
+
+.box4 {
+	margin: -115px 0px 0px 820px;
+}
+
+/*-- FLEXBOX --*/
+
+.padre-flex /*-- contacto.html --*/ {
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+}
+
+.padre-flex2 /*-- establecimiento.html --*/ {
+	display: inline-block;
+	flex-wrap: wrap;
+}
+
+/*-- GRID --*/
+
+main {
+	display: grid;
+	margin: 0 auto;
+
+	grid-template-areas: 
+	"nav"
+	"contenido1"
+	"contenido2"
+	"contenido3"
+	"footer";
+	grid-template-rows: 55px 250px 250px 800px 200px;
+	grid-template-columns: 1fr;
+}
+
+footer {
+	grid-area:footer;
+	background-color:black;
+	color:white;
+}
+
+/*-- ANIMACIONES --*/
+
+.grad {
+	background-color:black;
+    transition: height 1s;
+}
+
+.grad:hover {
+    height: 125px;
+}
+
+/*-- MEDIA QUERIES --*/
+
+.miestilo {
+       background-color: #B6CEF4;
+}
+
+@media (max-width: 768px) {
+.miestilo {
+background-color: #A9C7CA; 
+text-align: center;
+align-items:center;
+}
+
+@media screen and (max-width: 768px) {
+menu {
+    float: none;
+    width: 100%;
+   	background-color: black;
+}
+}
