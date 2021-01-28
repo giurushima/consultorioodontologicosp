@@ -2,7 +2,7 @@
 
 //Tipos de colores
 
-$colorgrad: #E27979;
+$colorgrad: #000000;
 $gradiente1: #E27979;
 $gradiente2: #2CDC3D;
 
@@ -41,9 +41,9 @@ $colorpie: silver;
 	border: solid 2px black;
 	padding: 5px;
 	display: inline-block;
-	width: 500px;
-	height: 300px;
 	margin:30px 5px 30px 75px;
+	width: 520px;
+	height: 320px;
 	transition:1s;
 }
 
@@ -56,7 +56,7 @@ $colorpie: silver;
 	padding: 5px;
 	display: inline-block;
 	width: 550px;
-	height: 300px;
+	height: 400px;
 	margin: 0px 0px 30px 50px;
 	transition:1s;
 }
@@ -66,7 +66,6 @@ $colorpie: silver;
 }
 
 &__imgPos3 {
-	border:solid 2px black;
 	padding:5px;
 	margin:0px 10px 0px 10px;
 	display:inline-block;
