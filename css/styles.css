@@ -7,36 +7,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
-}
-
-/*-- MENU NAV --*/
-
-.menu{
-	list-style: none;
-	padding: 0px;
-	background: black;
-	width: 90%;
-	max-width: 1000px;
-	margin: auto;   
-}
-
-.menu li a{
-	text-decoration: none;
-	color: white;
-	padding: 20px ;
-	display: block;
-	list-style: none;
-}
-
-.menu li{
-	display: inline-block;
-	text-align: center;
-	list-style: none;
-}
-
-.menu li a:hover{
-	background: #B6CEF4;
+    scroll-behavior:smooth;
 }
 
 /*-- TABLA --*/
@@ -121,7 +92,7 @@ p {
 }
 
 .imgPos2 {
-	border: solid 2px black;
+	border-radius: solid 2px black;
 	padding: 5px;
 	display: inline-block;
 	width: 550px;
@@ -190,8 +161,8 @@ main {
 	"contenido2"
 	"contenido3"
 	"footer";
-	grid-template-rows: 55px 250px 250px 800px 200px;
-	grid-template-columns: 1fr;
+	grid-template-rows: 60px 200px 250px 800px 1fr;
+	grid-auto-columns: 1fr;
 }
 
 footer {
@@ -232,58 +203,60 @@ menu {
 }
 }
 
+@media screen (max-width: 200px max-height: 200px) and (max-width:600px max-height: 600px){
+img {
+	max-width:300px;
+	max-height:200px;
+}
+
+h1 {
+
+}
+
+main {
+	display: grid;
+	margin: 0 auto;
+
+	grid-template-areas: 
+	"nav"
+	"contenido1"
+	"contenido2"
+	"contenido3"
+	"footer";
+	grid-template-rows: 55px 100px 900px 2fr 1fr;
+	grid-auto-columns: auto;
+}
+
+.imgPos__imgPos2 {
+  border-radius: 30px 30px 30px 30px;
+  padding: 5px;
+  display: inline-block;
+  width: 550px;
+  height: 400px;
+  margin: 0px 30px 0px 30px;
+  transition: 1s; 
+}
+}
+
+iframe {
+ max-width: 100%;
+ height: auto;
+}
+
 .ima {
 max-width: 100%;
 }
 
-*{margin: 0;padding: 0;
+*{
+	margin: 0;padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;}
-    
-    .contenedor{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    .contenedor figure{
-       position:relative;
-        height: 250px;
-        cursor: pointer;
-        width: 350px;
-        overflow: hidden;
-        border-radius: 6px;
-        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-    }
-    .contenedor figure img{
-        width: 100%;
-        height: 100%;
-        transition: all 500ms ease-out;
-    }
-    .contenedor figure .capa{
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,103,123,0.7);
-        transition: all 500ms ease-out;
-        opacity: 0;
-        visibility: hidden;
-       text-align: center;
-    }
-    .contenedor figure .capa h3{
-        color: #fff;
-        font-weight: 400;
-        margin-bottom: 120px;
-        transition: all 500ms ease-out;
-         margin-top: 30px;
-    }
-    .contenedor figure .capa p{
-        color: #fff;
-        font-size: 15px;
-        line-height: 1.5;
-        width: 100%;
-        max-width: 220px;
-        margin: auto;
-    }
+    font-family: sans-serif;
+}
+
+.list-group-item:hover {
+	transform:scale(1.07);
+} 
+
+.separador {
+margin: 30px 0px 20px;
+}

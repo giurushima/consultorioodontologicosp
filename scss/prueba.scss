@@ -38,7 +38,7 @@ $colorpie: silver;
 .imgPos { 
 
 &__imgPos1 {
-	border: solid 2px black;
+	border-radius: 30px 30px 30px 30px;
 	padding: 5px;
 	display: inline-block;
 	margin:30px 5px 30px 75px;
@@ -52,7 +52,7 @@ $colorpie: silver;
 }
 
 &__imgPos2 {
-	border: solid 2px black;
+	border-radius: 30px 30px 30px 30px;
 	padding: 5px;
 	display: inline-block;
 	width: 550px;
@@ -136,14 +136,6 @@ $colorpie: silver;
 	right: 0;
 	@if else $gradiente1 == $gradiente2 {
 	background-image: linear-gradient(270deg, rgba($colorgrad, .25), rgba($colorgrad, .001));
-	}
-}
-
-//Cambio de click para pie de pagina
-
-.footer:hover {
-	@if $color1 = $color2 {
-	background-color: $colorpie;
 	}
 }
 
