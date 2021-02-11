@@ -12,27 +12,6 @@ $colorpie: silver;
 
 //Posiciones de cajas
 
-.boxes {
-      background-color: #979797;
-
- &__box1 {
-     margin: 60px 0px 0px 175px;
-}
- 
- &__box2 {
-     margin: 15px 0px 0px 175px;    
-}
- 
- &__box3 {
-    margin: -55px 500px 0px 450px;
-	text-align:center;
-}
-
-&__box4 {
-    margin: -115px 0px 0px 820px;
-}
-}
-
 //Posiciones y box model para imagenes
 
 .imgPos { 
@@ -40,11 +19,8 @@ $colorpie: silver;
 &__imgPos1 {
 	border-radius: 30px 30px 30px 30px;
 	padding: 5px;
-	display: inline-block;
-	margin:30px 5px 30px 75px;
-	width: 520px;
-	height: 320px;
 	transition:1s;
+	margin: 25px 0px 25px 0px;
 }
 
 &__imgPos1:hover {
@@ -54,10 +30,7 @@ $colorpie: silver;
 &__imgPos2 {
 	border-radius: 30px 30px 30px 30px;
 	padding: 5px;
-	display: inline-block;
-	width: 550px;
-	height: 400px;
-	margin: 0px 0px 30px 50px;
+	margin: 25px 0px 25px 0px;
 	transition:1s;
 }
 
