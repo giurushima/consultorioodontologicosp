@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Consultorio odontológico ubicado en la zona sur de Rosario, mas de 25 años atendiendo y solucionando problemas a los pacientes. El establecimiento cuenta con espacios comodos y amplios. Contando con protocolos contra COVID-19">
   <meta name="keywords"  content="INICIO, PREPAGAS, CONSULTAS, ODONTOLOGIA, CONSULTORIO DENTAL, ROSARIO, SP">
-	<title>Consultorio Odontológico SP</title>
+	<title>Inicio | Consultorio Odontológico SP</title> <!-- Titulo -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/Iconos/muelaicono.jpg"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -23,10 +23,6 @@
   <link rel="stylesheet" href="css/pruebacss.css">
 
 </head> <!-- Fin HEAD -->
-
-<style>
-  
-</style>
 
 <body class="cuerpo__fondoCompleto cuerpo__fuente"> <!-- Comienzo body -->
 
@@ -57,54 +53,24 @@
 </nav> <!-- Fin barra de navegacion -->
 
 <div class="contenedor"> <!-- Comienzo descripcion imagen de inicio -->
-  <img src="images/Consultorio/12.jpg" alt="Consultorio" width="100%" height="100%" alt="Inicio del consultorio">
+  <img class ="s" src="images/Consultorio/12.jpg" alt="Consultorio" width="100%" height="100%" alt="Inicio del consultorio">
 <h1 class="centrado2 badge-info">Consultorio Odontológico SP</h1>
 <h2 class="centrado1 badge-primary">Prestaciones</h2>
-<ul class="list-group list-group-flush centrado3">
-  <li class="list-group-item">Odontología General</li>
-  <li class="list-group-item">Odontopediatria</li>
-  <li class="list-group-item">Periodoncia</li>
-  <li class="list-group-item">Implantología</li>
-  <li class="list-group-item">Endodoncia</li>
+<ul class="list-group list-group-flush lista centrado3">
+  <li class="list-group-item lista">Odontología General</li>
+  <li class="list-group-item lista">Odontopediatria</li>
+  <li class="list-group-item lista">Periodoncia</li>
+  <li class="list-group-item lista">Implantología</li>
+  <li class="list-group-item lista">Endodoncia</li>
 </ul>
-</div>
-
-<style>
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    height:150%;
-    width:100%;
-}
- 
-.centrado1{
-    position: absolute;
-    top: 28%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.centrado2{
-    position:absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.centrado3{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-</style> <!-- Fin descripcion imagen de inicio -->
+</div>  <!-- Fin descripcion imagen de inicio -->
 
 <hr>
 
-<script>
-window.setInterval (BlinkIt, 500);
+<!-- Comienzo script de parpadeo para titulo -->
+
+<script> 
+window.setInterval (BlinkIt, 3000);
 var color = "white";
 function BlinkIt () {
 var blink = document.getElementById ("blink");
@@ -112,10 +78,19 @@ color = (color == "#ffffff")? "black" : "#ffffff";
 blink.style.color = color;
 blink.style.fontSize='36px';}
 </script>
-<div id="blink" class="text-center mt-5 mb-3 badge-pill badge-light p-1"><strong>Prepagas</strong></div>
-<div id="blink" onclick="parent.location='http://norfipc.com'"></div>
 
-<div id="carouselExampleControls" class="carousel slide mb-5 mt-5" data-ride="carousel"> <!-- Comienzo carrusel -->
+<!-- Fin script de parpadeo para titulo -->
+
+<div id="blink" class="jumbotron text-center"> <!-- Comienzo contenedor para seccion de prepagas -->
+  <h1 class="display-4">Prepagas</h1>
+  <hr class="my-4">
+  <p>Trabajamos con la mayor variedad de prepagas autorizadas por la provincia de Santa Fe.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="contacto.html" role="button">Solicitar información sobre prepagas</a>
+  </p>
+</div> <!-- Fin contenedor para seccion de prepagas -->
+
+<div id="carouselExampleControls" class="carousel slide mb-5" data-ride="carousel"> <!-- Comienzo carrusel -->
   <div class="carousel-inner">
     <div class="carousel-item active" align="center">
       <img class="d-block w-50 adapt" src="images/OS/pami.png" alt="Pami" width="100%" height="200px">
@@ -143,7 +118,7 @@ blink.style.fontSize='36px';}
   </a>
 </div> <!-- Fin carrusel -->
 
-<footer class="bg-dark text-white text-center text-lg-start"> <!-- Comienzo footer -->
+<footer class="bg-dark text-white text-center text-lg-start mt-5"> <!-- Comienzo footer -->
   <div class="container p-4">
     <div class="row">
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -153,8 +128,8 @@ blink.style.fontSize='36px';}
         </iframe>
       </div>
 
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Pagina</h5>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0"> <!-- Comienzo seccion de paginas -->
+        <h5 class="text-uppercase">Pagina</h5> 
 
         <ul class="list-unstyled mb-0">
           <li>
@@ -173,9 +148,9 @@ blink.style.fontSize='36px';}
             <a href="contacto.html" class="text-white">Contacto</a>
           </li>
         </ul>
-      </div>
+      </div> <!-- Fin seccion de paginas -->
 
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0"> <!-- Comienzo seccion de redes -->
         <h5 class="text-uppercase mb-2">Redes</h5>
 
         <ul class="list-unstyled">
@@ -197,13 +172,14 @@ blink.style.fontSize='36px';}
         </ul>
       </div>
     </div>
-  </div>
 
-
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+  </div> <!-- Fin seccion de redes -->
+  
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)"> <!-- Comienzo copyright -->
     © 1990 Copyright: 
     <a class="text-white" href="https://www.consultorioodontologicosp.com.ar">Consultorio Odontológico SP</a>
-  </div>
+  </div> <!-- Fin copyright -->
+
 </footer> <!-- Fin footer -->
 
 </body> <!-- Fin body -->

@@ -10,8 +10,6 @@ $color1: #000000;
 $color2: #000000;
 $colorpie: silver;
 
-//Posiciones de cajas
-
 //Posiciones y box model para imagenes
 
 .imgPos { 
@@ -24,7 +22,7 @@ $colorpie: silver;
 }
 
 &__imgPos1:hover {
-	transform:scale(1.07);
+	transform:scale(1.04);
 }
 
 &__imgPos2 {
@@ -35,7 +33,7 @@ $colorpie: silver;
 }
 
 &__imgPos2:hover {
-	transform:scale(1.07);
+	transform:scale(1.04);
 }
 
 &__imgPos3 {
